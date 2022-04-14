@@ -1,0 +1,5 @@
+Se agredo mixin en _generales.scss
+Se agrego mixin en _mediaQueriMax.scss
+Se agrego mixin en _mediaQueriMin.scss
+Se agrego @extend .boton en _generales.scss
+Se agrego SEO en todas las paginas .html

@@ -1,0 +1,117 @@
+@media only screen and (max-width:600px){
+    
+    /* section main */
+    .main{
+        height: 110vh;
+        background-color: $colorMain;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        .main .info-content{
+            grid-column: 1 / 5;
+            grid-row: 2 / 9;
+        }
+    }
+
+    .title{
+        grid-column: 5 / 6;
+        animation: swing; 
+        animation-duration: 2s;
+    }
+
+    @mixin navBar($posicion) {
+        display: grid;
+        align-items: center;
+        position: $posicion;
+        
+    }
+    .nav-bar{
+        @include navBar(relative);
+        background-color: $colorNavBar;
+        grid-template-columns: repeat(8, 1fr);
+        .nav-bar .shopping{
+            display: none;
+        }
+        .nav-bar .menu{
+            @include navBar(absolute);
+            width: 90%;
+            height: 70vh;
+            margin-top: 32em;
+            transform: translateX(10%);
+            justify-items: start;
+            justify-content: end;
+        }
+    }
+    
+    /* section footer */
+
+    .footer .powered{
+        display: none;
+    }
+
+    /* section galeria */
+    @mixin grilla($width, $height) {
+        width: $width;
+        height: $height;
+    }
+    #grilla{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 200px 200px 200px;
+        justify-items: center;
+        align-items: center;
+        animation: zoomInUp; 
+        animation-duration: 2s;
+        #grilla div{
+            @include grilla(80%, 80%);
+            background-color: $colorGrilla;
+        }
+        
+        .img{
+            @include grilla(100%, 100%);
+        }
+    }
+
+    /* section video */
+
+    #grilla-video{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 300px;
+        justify-items: center;
+        align-items: center;
+        animation: zoomInUp; 
+        animation-duration: 2s;
+        #grilla-video div{
+            background-color: $colorGrilla;
+            @include grilla(80%, 80%);
+        }
+        
+        .video{
+            @include grilla(100%, 100%);
+        }
+    }
+    
+    /* section cards */
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+        flex-wrap: wrap;
+    }
+
+    .productos{
+        height: 260vh;
+        background-color: $colorMain;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+
+   
+}

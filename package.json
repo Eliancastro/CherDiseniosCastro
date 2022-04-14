@@ -1,0 +1,25 @@
+{
+  "name": "disenios-castro",
+  "version": "1.0.0",
+  "description": "Migrando proyecto a SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eliancastro/Disenios-Castro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eliancastro/Disenios-Castro/issues"
+  },
+  "homepage": "https://github.com/Eliancastro/Disenios-Castro#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {}
+  
+}

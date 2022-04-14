@@ -1,0 +1,105 @@
+@media only screen and (min-width:600px){
+
+    .main{
+        height: 130vh;
+        background-color: $colorMain;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        .main .info-content{
+            grid-column: 1 / 5;
+            grid-row: 4/ 9;
+            color: $colorLetra;
+        }
+    }
+
+    .title{
+        display: none;
+        
+    }
+    
+    
+    .nav-bar{
+        background-color: $colorNavBar;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        align-items: center;
+        .nav-bar .menu{
+        grid-column: 3 / 8;
+        display: flex;
+        justify-content: space-around;  
+        font-size:small;
+        }
+        .nav-bar .shopping{
+            grid-column: 8 / 9;
+            cursor: pointer;
+        }
+       
+    }
+
+    /* section galeria */
+    @mixin grilla($width, $height) {
+        width: $width;
+        height: $height;
+    }
+    #grilla{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 300px 300px;
+        justify-items: center;
+        align-items: center;
+        animation: zoomInUp; 
+        animation-duration: 2s;
+        #grilla div{
+            @include grilla(90%, 70%);
+            background-color: $colorGrilla;
+        }
+        
+        .img{
+            @include grilla(100%, 100%);
+           
+        }
+    }
+    
+    /* section video */
+
+    #grilla-video{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 400px;
+        justify-items: center;
+        align-items: center;
+        animation: zoomInUp; 
+        animation-duration: 2s;
+        #grilla-video div{
+            background-color: $colorGrilla;
+            @include grilla(80%, 80%);
+        }
+        
+        .video{
+            @include grilla(100%, 100%);
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .productos{
+        height: 170vh;
+        background-color: $colorMain;
+        display: flex;
+        flex-direction: column;
+        background-size:cover;
+        background-position: center;
+    }
+ 
+}

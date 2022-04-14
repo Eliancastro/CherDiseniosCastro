@@ -1,0 +1,346 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: large; }
+
+.nav-bar .logo {
+  width: 100px;
+  height: 80px;
+  grid-column: 1 / 3;
+  display: inline-block;
+  animation: bounce;
+  animation-duration: 2s; }
+
+.main h2 {
+  font-family: 'Redressed', cursive;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 10px;
+  color: black;
+  animation: zoomInUp;
+  animation-duration: 2s; }
+
+.productos h2 {
+  font-family: 'Redressed', cursive;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: black;
+  animation: zoomInUp;
+  animation-duration: 2s; }
+
+  .qHacer{
+  font-family: 'Redressed', cursive;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: black;
+  animation: zoomInUp;
+  animation-duration: 2s;
+  }
+  .qHacer h1{
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+.main p {
+  font-size: 1.70em;
+  font-family: 'Great Vibes', cursive;
+  margin-top: 15px;
+  color: black;
+  animation: zoomInUp;
+  animation-duration: 2s; }
+
+.main .boton {
+  font-size: 0.6em;
+  background: none;
+  padding: 2px 3px;
+  font-family: 'Redressed', cursive;
+  font-size: 1em;
+  margin-top: 10px;
+  color: aliceblue; }
+
+.main .boton:hover {
+  background-color: blanchedalmond;
+  color: black;
+  cursor: pointer; }
+
+.nav-bar .menu li {
+  list-style: none; }
+
+.nav-bar .menu a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer; }
+
+.nav-bar .menu a:hover {
+  color: aliceblue; }
+
+/* section footer */
+.footer {
+  display: grid;
+  height: 80px;
+  align-items: center;
+  background-color: black;
+  color: blanchedalmond;
+  grid-template-rows: "powered social"; }
+
+.footer .powered h2 {
+  grid-template-rows: powered;
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  color: gray; }
+
+.footer .social {
+  grid-template-rows: social;
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+  color: gray; }
+
+.footer .social .fa-brands {
+  margin-right: 20px;
+  font-size: xx-large;
+  color: gray; }
+
+.footer .social .fa-regular {
+  margin-left: 5px;
+  color: gray;
+  font-size: 35px; }
+
+.footer .social .fa-brands:hover {
+  color: antiquewhite;
+  cursor: pointer; }
+
+.footer .social .fa-regular:hover {
+  color: antiquewhite;
+  cursor: pointer; }
+
+.carousel-inner {
+  max-height: 39rem; 
+  
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    height: 150vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    /* background-image: linear-gradient(rgba(16, 16, 16, .5), rgba(16, 16, 16, .5)), url(../img/Perfil.jpg);*/
+    background-size: cover;
+    background-position: center;
+    /*animation-name: mianimacion;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;*/ }
+  /*@keyframes mianimacion {
+        0% {background-image: linear-gradient(rgba(16, 16, 16, .5), rgba(16, 16, 16, .5)), url(../img/Perfil.jpg);}
+        50% {background-image: linear-gradient(rgba(43, 41, 41, 0.5), rgba(43, 41, 41, 0.5)), url(../img/Perfil.jpg);}
+        100% {background-image: linear-gradient(rgba(56, 56, 61, 0.5), rgba(56, 56, 61, 0.5)), url(../img/Perfil.jpg);}     
+    }*/
+  .title {
+    display: none; }
+  .queHacer{
+    top: 10px;
+  }
+  .nav-bar {
+    background-color: #eca9cb;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center; }
+  .nav-bar .menu {
+    grid-column: 3 / 8;
+    display: flex;
+    justify-content: space-around;
+    font-size: small; }
+  .nav-bar .shopping {
+    grid-column: 8 / 9;
+    cursor: pointer; }
+  /* section main */
+  .main .info-content {
+    grid-column: 1 / 5;
+    grid-row: 4/ 9;
+    color: black; }
+  /* section galeria */
+  #grilla {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 300px 300px;
+    justify-items: center;
+    align-items: center;
+    animation: zoomInUp;
+    animation-duration: 2s; }
+  #grilla div {
+    background-color: white;
+    width: 90%;
+    height: 80%; }
+  .img {
+    height: 100%;
+    width: 100%; }
+  /* section video */
+  #grilla-video {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-top: 20px;
+    animation: zoomInUp;
+    animation-duration: 2s; }
+  #grilla-video div {
+    background-color: black;
+    width: 80%;
+    height: 70%; 
+    margin: 40px;}
+  .video {
+    height: 100%;
+    width: 100%; }
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    flex-wrap: wrap; }
+  .productos {
+    height: 200vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; }
+    .qHacer{
+    height: 370vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; }
+
+    }
+
+    .galeria{
+    height: 160vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; }
+    
+    
+   
+
+@media only screen and (max-width: 600px) {
+  .main {
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    /*background-image: linear-gradient(rgba(16, 16, 16, .5), rgba(16, 16, 16, .5)), url(../img/Perfil.jpg);*/
+    background-size: cover;
+    background-position: center;
+    /*animation-name: mianimacion;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;*/ }
+  /*@keyframes mianimacion {
+        0% {background-image: linear-gradient(rgba(16, 16, 16, .5), rgba(16, 16, 16, .5)), url(../img/Perfil.jpg);}
+        50% {background-image: linear-gradient(rgba(43, 41, 41, 0.5), rgba(43, 41, 41, 0.5)), url(../img/Perfil.jpg);}
+        100% {background-image: linear-gradient(rgba(56, 56, 61, 0.5), rgba(56, 56, 61, 0.5)), url(../img/Perfil.jpg);}     
+    }*/
+  .title {
+    grid-column: 5 / 6;
+    animation: swing;
+    animation-duration: 2s; }
+  .nav-bar {
+    position: relative;
+    background-color: #e9c4d6;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center; }
+  .nav-bar .shopping {
+    display: none; }
+  .nav-bar .menu {
+    position: absolute;
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    margin-top: 32em;
+    transform: translateX(10%);
+    align-items: center;
+    justify-items: start;
+    justify-content: end; }
+  /* section main */
+  .main .info-content {
+    grid-column: 1 / 5;
+    grid-row: 2 / 9; }
+  /* section footer */
+  .footer .powered {
+    display: none; }
+  /* section galeria */
+  #grilla {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-top: 20px;
+    animation: zoomInUp;
+    animation-duration: 2s; }
+  #grilla div {
+    background-color: black;
+    width: 90%;
+    margin: 40px;
+    }
+  .img {
+    height: 100%;
+    width: 100%; }
+  /* section video */
+  #grilla-video {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    margin-top: 20px;
+    animation: zoomInUp;
+    animation-duration: 2s; }
+  #grilla-video div {
+    background-color: black;
+    width: 80%;
+    height: 50%;
+    margin: 40px; }
+  .video {
+    height: 100%;
+    width: 100%; }
+  /* section cards */
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    }
+  .productos {
+    height: 310vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center; } 
+
+    .qHacer{
+      height: 290vh;
+      background-color: pink;
+      display: flex;
+      flex-direction: column;
+      background-size: cover;
+      background-position: center; }
+    
+    .galeria{
+      height: 400vh;
+      background-color: pink;
+      display: flex;
+      flex-direction: column;
+      background-size: cover;
+      background-position: center; 
+
+    }
+  }
